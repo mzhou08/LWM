@@ -5,9 +5,9 @@ export PROJECT_DIR="$( cd -- "$( dirname -- "$SCRIPT_DIR" )" &> /dev/null && pwd
 cd $PROJECT_DIR
 export PYTHONPATH="$PYTHONPATH:$PROJECT_DIR"
 
-export llama_tokenizer_path=""
-export vqgan_checkpoint=""
-export lwm_checkpoint=""
+export llama_tokenizer_path="LWM-Chat-32K-Jax/tokenizer.model"
+export vqgan_checkpoint="LWM-Chat-32K-Jax/vqgan"
+export lwm_checkpoint="LWM-Chat-32K-Jax/params"
 
 # Relevant params
 # --temperature_*: Temperature that is applied to each of the logits
